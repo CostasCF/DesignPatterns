@@ -11,17 +11,11 @@ public class Main {
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		myShape.draw();					        //APPLICATION 1
-		f.setVisible(true);
-		
+		f.setVisible(true);	
 												//APPLICATION 2
-		try { //rectangle object must be initiated before application2 runs, otherwise we have a null object exception popping up
-			GeometricShape geometricShape = new GeometricShape(myShape);										
+		GeometricShape geometricShape = new GeometricShape(myShape);										
 		System.out.println("Lower Right Corner. X: " + geometricShape.getXLowerRightCorner()
 		                                    + " Y: " + geometricShape.getYLowerRightCorner());
-		} catch (Exception e) {
-			System.out.println("you fucked up");
-		}
-		
 		                             
 	}	
 }
