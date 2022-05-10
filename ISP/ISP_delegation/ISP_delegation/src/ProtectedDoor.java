@@ -4,6 +4,11 @@ import java.util.Scanner;
 public class ProtectedDoor implements Door {
     private DoorPasswordAdapter myDoorPasswordAdapter;
 
+    public ProtectedDoor(PasswordProtector passwordProtector){
+        DoorPasswordAdapter newPasswordAdapter = new DoorPasswordAdapter(passwordProtector);
+        myDoorPasswordAdapter = newPasswordAdapter;
+    }
+
     public void setDoorPasswordAdapter(DoorPasswordAdapter newDoorPasswordAdapter){
         myDoorPasswordAdapter = newDoorPasswordAdapter;
     }
