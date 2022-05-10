@@ -7,6 +7,7 @@ public class App {
         mydoor.setMyProtector(myProtector); //initializing the protector for the newly created door
         
         myProtector.Register(1010, mydoor);
+        mydoor.lock();
 
         mydoor.unlock();
         

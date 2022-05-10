@@ -1,8 +1,15 @@
 import java.util.Scanner;
 
-public class ProtectedDoor implements Door,PasswordClient {
-    private PasswordProtector myProtector;
+public class ProtectedDoor implements Door {
     private Boolean locked;
+    private DoorPasswordAdapter myDoorPasswordAdapter;
+
+    public void setDoorPasswordAdapter(DoorPasswordAdapter newDoorPasswordAdapter){
+        myDoorPasswordAdapter = newDoorPasswordAdapter;
+    }
+
+    public DoorPasswordAdapter getDoorPasswordAdapter()
+    {return myDoorPasswordAdapter;}
     
     @Override
     public void lock() {
@@ -17,21 +24,11 @@ public class ProtectedDoor implements Door,PasswordClient {
         Scanner myObj = new Scanner(System.in);
         number = myObj.nextInt();
         myObj.close();
-        locked = myProtector.check(number);
+        locked =  myDoorPasswordAdapter.check(number);
+       
         if(!locked){
             System.out.println("The door is unlocked.");
         }
-    }
-
-    @Override
-    public void alarm() {
-      System.out.println("ALARM: Someone is trying to enter without code!!\n");
-        
-    }
-
-    @Override
-    public void setMyProtector(PasswordProtector theProtector) {
-        myProtector = theProtector;
         
     }
     

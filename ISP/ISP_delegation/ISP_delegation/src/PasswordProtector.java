@@ -1,4 +1,3 @@
-
 public class PasswordProtector {
     private int safeNumber;
     private PasswordClient myclient;
@@ -11,11 +10,10 @@ public class PasswordProtector {
     public boolean check(int code){
         if(code !=safeNumber){
             myclient.alarm();
-            return true;
-        }
-        else{
-            return false;
-        }    
+            return true; 
+        } 	
+        else
+            return false;     
     }
 
 }
