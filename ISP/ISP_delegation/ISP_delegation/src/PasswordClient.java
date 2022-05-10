@@ -1,4 +1,5 @@
 public interface PasswordClient {
-   public void alarm();
+   public boolean getAlarmStatus();
+   public void setAlarmStatus(boolean status);
    public void setMyProtector(PasswordProtector theProtector);
 }

@@ -7,13 +7,11 @@ public class PasswordProtector {
         myclient = client;       
     }
 
-    public boolean check(int code){
-        if(code !=safeNumber){
-            myclient.alarm();
-            return true; 
-        } 	
+    public void check(int code){
+        if(code !=safeNumber)
+            myclient.setAlarmStatus(true);	
         else
-            return false;     
+           myclient.setAlarmStatus(false);   
     }
 
 }

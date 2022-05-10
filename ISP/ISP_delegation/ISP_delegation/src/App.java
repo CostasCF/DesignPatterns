@@ -7,5 +7,6 @@ public class App {
       protector.Register(1010, door.getDoorPasswordAdapter()); //registering the door for the first time
       door.lock();
       door.unlock();
+      door.checkAlarm();  
     }
 }
