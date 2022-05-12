@@ -9,7 +9,6 @@ public class App {
         myProtector.Register(1010, mydoor);
         mydoor.lock();
 
-        mydoor.unlock();
-        
+        mydoor.unlock(); 
     }
 }

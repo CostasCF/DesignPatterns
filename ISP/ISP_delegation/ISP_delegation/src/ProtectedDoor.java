@@ -5,8 +5,7 @@ public class ProtectedDoor implements Door {
     private DoorPasswordAdapter myDoorPasswordAdapter;
 
     public ProtectedDoor(PasswordProtector passwordProtector){
-        DoorPasswordAdapter newPasswordAdapter = new DoorPasswordAdapter(passwordProtector);
-        myDoorPasswordAdapter = newPasswordAdapter;
+        myDoorPasswordAdapter = new DoorPasswordAdapter(passwordProtector);
     }
 
     public void setDoorPasswordAdapter(DoorPasswordAdapter newDoorPasswordAdapter){
