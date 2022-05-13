@@ -21,12 +21,12 @@ public class ProtectedDoor implements Door {
         }
      }
 
-    @Override
+
     public void lock() {
         System.out.println("The door is locked.");
     }
 
-    @Override
+   
     public void unlock() {
         int number;
         System.out.println("Enter code: ");

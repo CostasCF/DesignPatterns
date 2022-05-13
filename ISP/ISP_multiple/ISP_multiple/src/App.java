@@ -4,11 +4,12 @@ public class App {
         PasswordProtector myProtector = new PasswordProtector();
         ProtectedDoor mydoor = new ProtectedDoor();
         
-        mydoor.setMyProtector(myProtector); //initializing the protector for the newly created door
+        //initializing the protector for the newly created door
+        mydoor.setMyProtector(myProtector); 
         
+        //registering the door's password
         myProtector.Register(1010, mydoor);
         mydoor.lock();
-
         mydoor.unlock(); 
     }
 }
