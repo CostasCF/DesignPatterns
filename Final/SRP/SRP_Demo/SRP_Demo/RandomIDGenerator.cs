@@ -8,7 +8,7 @@ namespace SRP_Demo
 {
     public class RandomIDGenerator
     {
-        public static void createID(User user)
+        public static void CreateID(User user)
         {
 
             //create an random ID for a user
