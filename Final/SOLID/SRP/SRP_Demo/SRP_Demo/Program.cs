@@ -22,7 +22,7 @@ namespace SRP_Demo
                 return;
             }
 
-            RandomIDGenerator.createID(user);
+            RandomIDGenerator.CreateID(user);
 
             StandardMessages.EndApplication();
         }
