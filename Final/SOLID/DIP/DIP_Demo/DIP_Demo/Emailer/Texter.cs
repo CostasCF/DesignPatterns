@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DIP_Demo
 {
@@ -6,7 +10,7 @@ namespace DIP_Demo
     {
         public void SendMessage(IUser user, string message)
         {
-            Console.WriteLine($"Sending {message} from {user}");
+            Console.WriteLine($"I am texting { user.FirstName } to say { message }");
         }
     }
 }
