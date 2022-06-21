@@ -36,16 +36,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractFactory.cs" />
-    <Compile Include="FactoryProducer.cs" />
-    <Compile Include="IShape.cs" />
+    <Compile Include="Factories\AbstractFactory.cs" />
+    <Compile Include="Factories\FactoryProducer.cs" />
+    <Compile Include="Shapes\IShape.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Rectangle.cs" />
-    <Compile Include="RoundedRectangle.cs" />
-    <Compile Include="RoundedShapeFactory.cs" />
-    <Compile Include="RoundedSquare.cs" />
-    <Compile Include="ShapeFactory.cs" />
-    <Compile Include="Square.cs" />
+    <Compile Include="Shapes\Rectangle.cs" />
+    <Compile Include="Shapes\RoundedRectangle.cs" />
+    <Compile Include="Factories\RoundedShapeFactory.cs" />
+    <Compile Include="Shapes\RoundedSquare.cs" />
+    <Compile Include="Factories\ShapeFactory.cs" />
+    <Compile Include="Shapes\Square.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
