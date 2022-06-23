@@ -35,5 +35,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExternalLibrary\AdvancedVideoRecorder.cs" />
+    <Compile Include="ExternalLibrary\IAdvancedVideoRecorder.cs" />
+    <Compile Include="VideoRecorder\IVideoRecorder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="VideoRecorder\VideoRecAdapter.cs" />
+    <Compile Include="VideoRecorder\VideoRecorder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
