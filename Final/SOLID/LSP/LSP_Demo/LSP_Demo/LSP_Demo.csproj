@@ -36,13 +36,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseEmployee.cs" />
-    <Compile Include="CEO.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="IEmployee.cs" />
-    <Compile Include="IManager.cs" />
-    <Compile Include="IManagerAssignable.cs" />
-    <Compile Include="Manager.cs" />
+    <Compile Include="Base Class\BaseEmployee.cs" />
+    <Compile Include="CEO\CEO.cs" />
+    <Compile Include="Employee\Employee.cs" />
+    <Compile Include="Employee\IEmployee.cs" />
+    <Compile Include="Manager\IManager.cs" />
+    <Compile Include="Employee\IManagerAssignable.cs" />
+    <Compile Include="Manager\Manager.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
