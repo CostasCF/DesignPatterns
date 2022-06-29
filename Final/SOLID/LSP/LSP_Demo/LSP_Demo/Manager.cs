@@ -2,7 +2,7 @@
 
 namespace LSP_Demo
 {
-    public class Manager : Employee, IManager
+    public class Manager : BaseEmployee, IManager
     {
 
         public override void CalculatePerHourRate(int rank)

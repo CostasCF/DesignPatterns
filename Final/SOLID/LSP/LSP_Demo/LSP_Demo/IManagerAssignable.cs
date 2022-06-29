@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LSP_Demo
 {
-    public interface IManagerAssigned : IEmployee
+    public interface IManagerAssignable : IEmployee
     {
         IEmployee Manager { get; set; }
         void AssignManager(IEmployee manager);

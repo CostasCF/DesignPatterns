@@ -2,7 +2,7 @@
 
 namespace LSP_Demo
 {
-    public class Employee : BaseEmployee, IManagerAssigned
+    public class Employee : BaseEmployee, IManagerAssignable
     {
         public IEmployee Manager { get; set; } = null;
 

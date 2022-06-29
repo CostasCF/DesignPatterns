@@ -24,7 +24,7 @@ namespace LSP_Demo
             // emp.AssignManager(accountingVP);
             ceo.CalculatePerHourRate(2);
 
-            IManagerAssigned emp = new Employee();
+            IManagerAssignable emp = new Employee();
             emp.FirstName = "Nikos";
             emp.LastName = "Nikopoulos";
             emp.CalculatePerHourRate(1);
