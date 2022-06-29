@@ -12,7 +12,7 @@ namespace SRP_Demo
         {
             StandardMessages.WelcomeMessage();
 
-            User user = UserDataCapture.Capture();
+            User user = UserDataCapture.CaptureUserData();
 
             bool isUserValid = UserValidator.Validate(user);
 

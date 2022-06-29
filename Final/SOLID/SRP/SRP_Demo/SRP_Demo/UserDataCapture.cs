@@ -8,7 +8,7 @@ namespace SRP_Demo
 {
     public class UserDataCapture
     {
-        public static User Capture()
+        public static User CaptureUserData()
         {
             // Ask for user information
             User output = new User();
